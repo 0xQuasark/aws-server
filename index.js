@@ -11,7 +11,11 @@ const app = express();
 app.use(cors());
 
 app.get('/bikes', (req, res) => {
-  res.send('You got bikes!');
+  res.send('You got lotsa bikes!');
+});
+
+app.get('/cli', (req, res) => {
+  res.send('You used the cli!');
 });
 
 app.listen(PORT, () => {
